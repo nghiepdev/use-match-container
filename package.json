@@ -1,6 +1,7 @@
 {
   "name": "use-match-container",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "description": "A React hook for using match-container with convenient state management",
   "main": "build/use-match-container.js",
   "types": "build/use-match-container.d.ts",
   "scripts": {
@@ -16,14 +17,28 @@
   "dependencies": {
     "match-container": "^0.1.0"
   },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.28.0",
     "@babel/preset-env": "^7.28.0",
     "@types/babel__core": "^7.20.5",
     "@types/bun": "latest",
-    "@types/react": "^19.1.10"
-  },
-  "peerDependencies": {
+    "@types/react": "^19.1.10",
     "typescript": "^5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nghiep/use-match-container.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nghiep/use-match-container/issues"
+  },
+  "homepage": "https://github.com/nghiep/use-match-container#readme",
+  "keywords": [
+    "match-container",
+    "container query"
+  ],
+  "license": "MIT"
 }
