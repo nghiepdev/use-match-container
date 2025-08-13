@@ -1,5 +1,8 @@
 /// <reference path="./global.ts" />
-import 'match-container';
+
+if (typeof window !== 'undefined') {
+  import('match-container');
+}
 
 import {useEffect, useRef, useState} from 'react';
 
