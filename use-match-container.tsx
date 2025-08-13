@@ -16,7 +16,7 @@ type _TupleOf<T, N extends number, R extends unknown[]> = R['length'] extends N
   : _TupleOf<T, N, [T, ...R]>;
 
 export function useMatchContainer<T extends string[]>(queries: T) {
-  const [matches, setMatches] = useState<boolean[]>([]);
+  const [matches, setMatches] = useState(() => queries.map(() => false));
   const eleRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
