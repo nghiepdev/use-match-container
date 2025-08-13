@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    // Environment setup & latest features
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "target": "es5",
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "outDir": "./build",
+    // Bundler mode
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": false,
+    // Best practices
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    // Some stricter flags (disabled by default)
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "declaration": true,
+    "emitDeclarationOnly": false
+  },
+  "include": [
+    "use-match-container.tsx"
+  ],
+  "exclude": [
+    "index.ts",
+    "node_modules"
+  ]
+}
