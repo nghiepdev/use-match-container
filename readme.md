@@ -201,7 +201,12 @@ export default function ThemeAwareButton() {
   };
 
   return (
-    <div style={{'--variant': 'primary'}}>
+    <div
+      style={{
+        containerType: 'inline-size',
+        '--variant': 'primary',
+      }}
+    >
       <button
         ref={ref}
         style={getButtonStyle()}

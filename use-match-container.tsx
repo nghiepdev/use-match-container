@@ -1,5 +1,3 @@
-/// <reference path="./global.ts" />
-
 if (typeof window !== 'undefined') {
   import('match-container');
 }

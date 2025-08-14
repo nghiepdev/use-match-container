@@ -25,13 +25,11 @@
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": false,
     "declaration": true,
-    "emitDeclarationOnly": false
+    "emitDeclarationOnly": true
   },
-  "include": [
-    "use-match-container.tsx"
-  ],
   "exclude": [
     "index.ts",
+    "build",
     "node_modules"
   ]
 }
