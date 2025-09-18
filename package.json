@@ -5,10 +5,11 @@
   "main": "build/use-match-container.js",
   "types": "build/use-match-container.d.ts",
   "scripts": {
-    "build": "npm run build:tsc && npm run build:bun",
+    "build": "bun build:tsc && bun build:bun",
     "build:tsc": "tsc",
     "build:bun": "bun run index.ts",
-    "postbuild": "rm build/global.d.ts"
+    "postbuild": "rm build/global.d.ts",
+    "prepublishOnly": "bun run build"
   },
   "files": [
     "build",
@@ -23,9 +24,7 @@
   "devDependencies": {
     "@babel/core": "^7.28.0",
     "@babel/preset-env": "^7.28.0",
-    "@types/babel__core": "^7.20.5",
     "@types/bun": "latest",
-    "@types/react": "^19.1.10",
     "typescript": "^5"
   },
   "repository": {

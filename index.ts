@@ -19,8 +19,6 @@ const es5Plugin: BunPlugin = {
 Bun.build({
   entrypoints: ['./use-match-container.tsx'],
   outdir: './build',
-  target: 'browser',
-  format: 'esm',
   external: ['react'],
   banner: '"use client";',
   plugins: [es5Plugin],

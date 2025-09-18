@@ -229,3 +229,7 @@ export default function ThemeAwareButton() {
   );
 }
 ```
+
+## License
+
+MIT
