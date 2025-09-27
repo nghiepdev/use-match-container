@@ -1,6 +1,6 @@
 {
   "name": "use-match-container",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "description": "A React hook that provides a convenient way to use CSS Container Queries",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "exports": {
     ".": {
-      "types": "./use-match-container.d.ts",
+      "types": "./build/use-match-container.d.ts",
       "default": "./build/use-match-container.js"
     }
   },

@@ -5,6 +5,7 @@ node_modules
 out
 dist
 build
+!build/*.d.ts
 *.tgz
 
 # code coverage
