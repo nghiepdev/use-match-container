@@ -23,9 +23,7 @@
     // Some stricter flags (disabled by default)
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noPropertyAccessFromIndexSignature": false,
-    "declaration": true,
-    "emitDeclarationOnly": true
+    "noPropertyAccessFromIndexSignature": false
   },
   "exclude": [
     "build",

@@ -1,18 +1,9 @@
 import {useCallback, useState} from 'react';
 
-type Tuple<T, N extends number> = N extends N
-  ? number extends N
-    ? T[]
-    : _TupleOf<T, N, []>
-  : never;
-type _TupleOf<T, N extends number, R extends unknown[]> = R['length'] extends N
-  ? R
-  : _TupleOf<T, N, [T, ...R]>;
-
 export function useMatchContainer<T extends string[]>(queries: T) {
   const [matches, setMatches] = useState(() => queries.map(() => false));
 
-  const eleCallbackRef = useCallback(
+  const ref = useCallback(
     async (node: HTMLElement | null) => {
       await import('match-container');
       if (node instanceof HTMLElement) {
@@ -58,7 +49,7 @@ export function useMatchContainer<T extends string[]>(queries: T) {
   );
 
   return {
-    ref: eleCallbackRef,
-    matches: matches as Tuple<boolean, T['length']>,
+    ref,
+    matches,
   };
 }
