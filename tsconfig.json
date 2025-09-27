@@ -5,7 +5,7 @@
       "ESNext",
       "DOM"
     ],
-    "target": "es5",
+    "target": "ES6",
     "module": "ESNext",
     "moduleDetection": "force",
     "jsx": "react-jsx",
@@ -28,7 +28,6 @@
     "emitDeclarationOnly": true
   },
   "exclude": [
-    "index.ts",
     "build",
     "node_modules"
   ]
