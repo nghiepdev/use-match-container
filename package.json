@@ -2,11 +2,13 @@
   "name": "use-match-container",
   "version": "0.1.2",
   "type": "module",
+  "sideEffects": false,
   "description": "A React hook that provides a convenient way to use CSS Container Queries",
   "scripts": {
     "build": "bun build use-match-container.tsx --outdir ./build --external react --external match-container --banner '\"use client\";'",
     "prepublishOnly": "bun run build"
   },
+  "types": "./build/use-match-container.d.ts",
   "exports": {
     ".": {
       "types": "./build/use-match-container.d.ts",
